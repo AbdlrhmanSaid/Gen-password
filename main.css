@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Verdana, Arial;
+}
+
+.serial {
+  width: 200px;
+  background-color: #eee;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  font-size: 24px;
+  padding: 15px 10px;
+  height: 62px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.gen {
+  display: block;
+  background-color: #ff0e0e;
+  color: white;
+  font-weight: bold;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.log {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  background-color: #eee;
+  padding: 10px;
+  transition: 0.2s;
+}
+input {
+  display: block;
+  margin: 10px;
+  height: 35px;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 1px solid;
+}
+input:focus {
+  outline: none;
+}
+input.wrong {
+  border-bottom: 1px solid red;
+}
+input.wrong::-webkit-input-placeholder {
+  color: red;
+}
+input.wrong::-moz-placeholder {
+  color: red;
+}
+input.wrong:-ms-input-placeholder {
+  color: red;
+}
+input.wrong::-ms-input-placeholder {
+  color: red;
+}
+input.wrong::placeholder {
+  color: red;
+}
+button {
+  background-color: #ff0e0e;
+  color: white;
+  font-weight: bold;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.log.done {
+  transform: translateY(-200%);
+}
+.warning {
+  color: red;
+  font-weight: 600;
+  text-align: center;
+  display: none;
+}
